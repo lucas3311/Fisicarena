@@ -62,7 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AsciiArtFx\AsciiArtFx.cs" />
+    <Compile Include="Assets\Bullet.cs" />
     <Compile Include="Assets\ColorSuite\ColorSuite.cs" />
+    <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\Kino Imported\Bokeh\Bokeh.cs" />
     <Compile Include="Assets\Kino Imported\Fringe\Fringe.cs" />
     <Compile Include="Assets\Kino Imported\Vignette\Vignette.cs" />
