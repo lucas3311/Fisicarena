@@ -5,16 +5,16 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3A848AB7-9891-EDDA-D555-BF184C2F81F4}</ProjectGuid>
+    <ProjectGuid>{49FCAFB7-7D0A-B3F6-2171-B4248A94EC21}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AssemblyName>Unity.TextMeshPro.Editor.dll</AssemblyName>
+    <AssemblyName>Unity.Postprocessing.Runtime.dll</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
-    <UnityProjectType>Editor:5</UnityProjectType>
+    <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2018.2.5f1</UnityVersion>
     <RootNamespace></RootNamespace>
@@ -147,9 +147,6 @@
     </Reference>
     <Reference Include="Managed/UnityEngine/UnityEngine.SharedInternalsModule">
       <HintPath>C:\Program Files\Unity2018-2-5\Editor\Data\Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
-    </Reference>
-    <Reference Include="Managed/UnityEngine/UnityEngine.SpatialTrackingModule">
-      <HintPath>C:\Program Files\Unity2018-2-5\Editor\Data\Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll</HintPath>
     </Reference>
     <Reference Include="Managed/UnityEngine/UnityEngine.SpriteMaskModule">
       <HintPath>C:\Program Files\Unity2018-2-5\Editor\Data\Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
@@ -323,79 +320,90 @@
       <HintPath>C:/Program Files/Unity2018-2-5/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
-      <HintPath>C:\Program Files\Unity2018-2-5\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll</HintPath>
+      <HintPath>C:\Program Files\Unity2018-2-5\Editor\Data\MonoBleedingEdge\lib\mono\unity\mscorlib.dll</HintPath>
     </Reference>
     <Reference Include="System">
-      <HintPath>C:\Program Files\Unity2018-2-5\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll</HintPath>
+      <HintPath>C:\Program Files\Unity2018-2-5\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core">
-      <HintPath>C:\Program Files\Unity2018-2-5\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll</HintPath>
+      <HintPath>C:\Program Files\Unity2018-2-5\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Core.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization">
-      <HintPath>C:\Program Files\Unity2018-2-5\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Runtime.Serialization.dll</HintPath>
+      <HintPath>C:\Program Files\Unity2018-2-5\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Runtime.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml">
-      <HintPath>C:\Program Files\Unity2018-2-5\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll</HintPath>
+      <HintPath>C:\Program Files\Unity2018-2-5\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Xml.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq">
-      <HintPath>C:\Program Files\Unity2018-2-5\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.Linq.dll</HintPath>
+      <HintPath>C:\Program Files\Unity2018-2-5\Editor\Data\MonoBleedingEdge\lib\mono\unity\System.Xml.Linq.dll</HintPath>
     </Reference>
     <Reference Include="UnityScript">
-      <HintPath>C:\Program Files\Unity2018-2-5\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\UnityScript.dll</HintPath>
+      <HintPath>C:\Program Files\Unity2018-2-5\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.dll</HintPath>
     </Reference>
     <Reference Include="UnityScript.Lang">
-      <HintPath>C:\Program Files\Unity2018-2-5\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\UnityScript.Lang.dll</HintPath>
+      <HintPath>C:\Program Files\Unity2018-2-5\Editor\Data\MonoBleedingEdge\lib\mono\unity\UnityScript.Lang.dll</HintPath>
     </Reference>
     <Reference Include="Boo.Lang">
-      <HintPath>C:\Program Files\Unity2018-2-5\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\Boo.Lang.dll</HintPath>
+      <HintPath>C:\Program Files\Unity2018-2-5\Editor\Data\MonoBleedingEdge\lib\mono\unity\Boo.Lang.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{07A21C90-D344-AE1A-8456-9910C203B41A}</Project>
-      <Name>Unity.TextMeshPro</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\DropdownOptionListDrawer.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\EditorCoroutine.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\GlyphInfoDrawer.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\KerningPairDrawer.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\SpriteInfoDrawer.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMP_BaseShaderGUI.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMP_BitmapShaderGUI.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMP_ColorGradientAssetMenu.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMP_ColorGradientEditor.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMP_DropdownEditor.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMP_EditorPanel.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMP_EditorUtility.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMP_FontAssetEditor.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMP_InputFieldEditor.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMP_MeshRendererEditor.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMP_PackageUtilities.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMP_PostBuildProcessHandler.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMP_ProjectTextSettings.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMP_ResourcesLoader.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMP_SDFShaderGUI.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMP_SettingsEditor.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMP_SpriteAssetEditor.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMP_SpriteAssetImporter.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMP_SpriteAssetMenu.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMP_StyleAssetMenu.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMP_StyleSheetEditor.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMP_SubMesh_Editor.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMP_SubMeshUI_Editor.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMP_UiEditorPanel.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMP_UIStyleManager.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMPro_ContextMenus.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMPro_CreateObjectMenu.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMPro_EditorShaderUtilities.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMPro_FontAssetCreatorWindow.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMPro_FontPlugin.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMPro_SDFMaterialEditor.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMPro_SortingLayerHelper.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMPro_TextContainerEditor.cs" />
-    <Compile Include="Packages\com.unity.textmeshpro\Scripts\Editor\TMPro_TexturePostProcessor.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Attributes\DisplayNameAttribute.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Attributes\MaxAttribute.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Attributes\MinMaxAttribute.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Attributes\PostProcessAttribute.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Effects\AmbientOcclusion.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Effects\AutoExposure.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Effects\Bloom.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Effects\ChromaticAberration.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Effects\ColorGrading.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Effects\DepthOfField.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Effects\Dithering.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Effects\FastApproximateAntialiasing.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Effects\Fog.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Effects\Grain.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Effects\LensDistortion.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Effects\MotionBlur.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Effects\MultiScaleVO.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Effects\ScalableAO.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Effects\ScreenSpaceReflections.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Effects\SubpixelMorphologicalAntialiasing.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Effects\TemporalAntialiasing.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Effects\Vignette.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Monitors\HistogramMonitor.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Monitors\LightMeterMonitor.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Monitors\Monitor.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Monitors\VectorscopeMonitor.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Monitors\WaveformMonitor.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\ParameterOverride.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\PostProcessBundle.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\PostProcessDebug.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\PostProcessDebugLayer.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\PostProcessEffectRenderer.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\PostProcessEffectSettings.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\PostProcessEvent.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\PostProcessLayer.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\PostProcessManager.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\PostProcessProfile.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\PostProcessRenderContext.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\PostProcessResources.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\PostProcessVolume.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Utils\ColorUtilities.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Utils\HableCurve.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Utils\HaltonSeq.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Utils\LogHistogram.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Utils\MeshUtilities.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Utils\PropertySheet.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Utils\PropertySheetFactory.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Utils\RuntimeUtilities.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Utils\ShaderIDs.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Utils\Spline.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Utils\TargetPool.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Utils\TextureFormatUtilities.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Utils\TextureLerper.cs" />
+    <Compile Include="Packages\com.unity.postprocessing\PostProcessing\Runtime\Utils\XRSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AsciiArtFx\AsciiArtFx.shader" />
