@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4400895979741162}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Emitter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 58880851355377272}
   - component: {fileID: 250816219797442278}
   - component: {fileID: 50985961257364510}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4465054409915474}
   - component: {fileID: 212215146440064318}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,8 +146,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 100
-  m_LinearDrag: 1
+  m_Mass: 10
+  m_LinearDrag: 6
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -176,7 +176,7 @@ CircleCollider2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1388296691031784}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -197,11 +197,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Emitter: {fileID: 4400895979741162}
-  Velocidade: 25000
+  Velocidade: 40000
   Bullet: {fileID: 50907824828330354, guid: febd275f112756c4c9e6875a157bd3e8, type: 2}
-  velBullet: 200
+  velBullet: 450
   camera: {fileID: 0}
   speed: 12
+  GameManager: {fileID: 0}
 --- !u!198 &198901362017049652
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -4899,11 +4900,11 @@ PointEffector2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1388296691031784}
-  m_Enabled: 1
+  m_Enabled: 0
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 7478
+    m_Bits: 6966
   m_ForceMagnitude: -3
   m_ForceVariation: 0
   m_DistanceScale: 1

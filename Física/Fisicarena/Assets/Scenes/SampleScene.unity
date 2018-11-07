@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 86848785}
   - component: {fileID: 86848784}
   - component: {fileID: 86848783}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plane (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -367,7 +367,7 @@ GameObject:
   - component: {fileID: 320913208}
   - component: {fileID: 320913207}
   - component: {fileID: 320913206}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plane (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -971,42 +971,15 @@ Prefab:
       propertyPath: camera
       value: 
       objectReference: {fileID: 534669904}
-    - target: {fileID: 1388296691031784, guid: 3eb995df1f4f7d84cb7c16686c7c382d, type: 2}
-      propertyPath: m_Name
-      value: Player1
-      objectReference: {fileID: 0}
-    - target: {fileID: 250816219797442278, guid: 3eb995df1f4f7d84cb7c16686c7c382d,
-        type: 2}
-      propertyPath: m_ColliderMask.m_Bits
-      value: 6966
-      objectReference: {fileID: 0}
-    - target: {fileID: 1388296691031784, guid: 3eb995df1f4f7d84cb7c16686c7c382d, type: 2}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1788630508143070, guid: 3eb995df1f4f7d84cb7c16686c7c382d, type: 2}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1063085251814056, guid: 3eb995df1f4f7d84cb7c16686c7c382d, type: 2}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 250816219797442278, guid: 3eb995df1f4f7d84cb7c16686c7c382d,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 58880851355377272, guid: 3eb995df1f4f7d84cb7c16686c7c382d,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 114869692197204824, guid: 3eb995df1f4f7d84cb7c16686c7c382d,
         type: 2}
       propertyPath: GameManager
       value: 
       objectReference: {fileID: 1303167650}
+    - target: {fileID: 1388296691031784, guid: 3eb995df1f4f7d84cb7c16686c7c382d, type: 2}
+      propertyPath: m_Name
+      value: Player1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3eb995df1f4f7d84cb7c16686c7c382d, type: 2}
   m_IsPrefabAsset: 0
@@ -1054,28 +1027,6 @@ Prefab:
       propertyPath: camera
       value: 
       objectReference: {fileID: 534669904}
-    - target: {fileID: 1148139299171378, guid: 5a75298c230580b40bf2f0be34d1c704, type: 2}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1566638644380700, guid: 5a75298c230580b40bf2f0be34d1c704, type: 2}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1097699011356958, guid: 5a75298c230580b40bf2f0be34d1c704, type: 2}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 250471447623233924, guid: 5a75298c230580b40bf2f0be34d1c704,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 58048911956216186, guid: 5a75298c230580b40bf2f0be34d1c704,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 114604840013107292, guid: 5a75298c230580b40bf2f0be34d1c704,
         type: 2}
       propertyPath: GameManager
@@ -1459,7 +1410,7 @@ GameObject:
   - component: {fileID: 1592824827}
   - component: {fileID: 1592824826}
   - component: {fileID: 1592824825}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plane (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1594,7 +1545,7 @@ GameObject:
   - component: {fileID: 1779729838}
   - component: {fileID: 1779729837}
   - component: {fileID: 1779729836}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plane (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
