@@ -647,6 +647,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 250755059776503460, guid: 3851ffc2844d7bb4d93ed35460946ac7,
+        type: 2}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 1847
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3851ffc2844d7bb4d93ed35460946ac7, type: 2}
   m_IsPrefabAsset: 0
@@ -1059,6 +1064,27 @@ Prefab:
       propertyPath: m_Name
       value: Player1
       objectReference: {fileID: 0}
+    - target: {fileID: 212695068062204388, guid: 3eb995df1f4f7d84cb7c16686c7c382d,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1388296691031784, guid: 3eb995df1f4f7d84cb7c16686c7c382d, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1788630508143070, guid: 3eb995df1f4f7d84cb7c16686c7c382d, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1063085251814056, guid: 3eb995df1f4f7d84cb7c16686c7c382d, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245301727292700, guid: 3eb995df1f4f7d84cb7c16686c7c382d, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3eb995df1f4f7d84cb7c16686c7c382d, type: 2}
   m_IsPrefabAsset: 0
@@ -1111,6 +1137,23 @@ Prefab:
       propertyPath: GameManager
       value: 
       objectReference: {fileID: 1303167650}
+    - target: {fileID: 212803053030577524, guid: 5a75298c230580b40bf2f0be34d1c704,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1148139299171378, guid: 5a75298c230580b40bf2f0be34d1c704, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1566638644380700, guid: 5a75298c230580b40bf2f0be34d1c704, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1097699011356958, guid: 5a75298c230580b40bf2f0be34d1c704, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a75298c230580b40bf2f0be34d1c704, type: 2}
   m_IsPrefabAsset: 0
@@ -1362,6 +1405,11 @@ Prefab:
       propertyPath: m_ForceVariation
       value: -25
       objectReference: {fileID: 0}
+    - target: {fileID: 250755059776503460, guid: 3851ffc2844d7bb4d93ed35460946ac7,
+        type: 2}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 1847
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3851ffc2844d7bb4d93ed35460946ac7, type: 2}
   m_IsPrefabAsset: 0
@@ -1475,6 +1523,11 @@ Prefab:
         type: 2}
       propertyPath: m_ForceVariation
       value: -25
+      objectReference: {fileID: 0}
+    - target: {fileID: 250755059776503460, guid: 3851ffc2844d7bb4d93ed35460946ac7,
+        type: 2}
+      propertyPath: m_ColliderMask.m_Bits
+      value: 1847
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3851ffc2844d7bb4d93ed35460946ac7, type: 2}
