@@ -576,6 +576,76 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1001 &408759186
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4243299260029352, guid: 3851ffc2844d7bb4d93ed35460946ac7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243299260029352, guid: 3851ffc2844d7bb4d93ed35460946ac7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243299260029352, guid: 3851ffc2844d7bb4d93ed35460946ac7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243299260029352, guid: 3851ffc2844d7bb4d93ed35460946ac7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243299260029352, guid: 3851ffc2844d7bb4d93ed35460946ac7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243299260029352, guid: 3851ffc2844d7bb4d93ed35460946ac7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243299260029352, guid: 3851ffc2844d7bb4d93ed35460946ac7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243299260029352, guid: 3851ffc2844d7bb4d93ed35460946ac7, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243299260029352, guid: 3851ffc2844d7bb4d93ed35460946ac7, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4243299260029352, guid: 3851ffc2844d7bb4d93ed35460946ac7, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 250755059776503460, guid: 3851ffc2844d7bb4d93ed35460946ac7,
+        type: 2}
+      propertyPath: m_ForceMagnitude
+      value: -25
+      objectReference: {fileID: 0}
+    - target: {fileID: 58369603643907084, guid: 3851ffc2844d7bb4d93ed35460946ac7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 250755059776503460, guid: 3851ffc2844d7bb4d93ed35460946ac7,
+        type: 2}
+      propertyPath: m_DistanceScale
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 250755059776503460, guid: 3851ffc2844d7bb4d93ed35460946ac7,
+        type: 2}
+      propertyPath: m_ForceVariation
+      value: -25
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3851ffc2844d7bb4d93ed35460946ac7, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &534669902
 GameObject:
   m_ObjectHideFlags: 0
