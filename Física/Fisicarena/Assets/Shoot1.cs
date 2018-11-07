@@ -11,6 +11,9 @@ public class Shoot1 : MonoBehaviour
 
     public Camera camera;
     public float speed;
+
+    public GameObject GameManager;
+
     // Use this for initialization
     void Start()
     {
@@ -44,5 +47,13 @@ public class Shoot1 : MonoBehaviour
             bulletInstance.AddForce(Emitter.up * velBullet);
         }
         
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 9)
+        {
+            Destroy(gameObject);
+            GameManager.GetComponent<GameManager>().Score1 = +1;
+        }
     }
 }
