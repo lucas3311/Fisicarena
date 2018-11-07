@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 86848785}
   - component: {fileID: 86848784}
   - component: {fileID: 86848783}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Plane (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -367,7 +367,7 @@ GameObject:
   - component: {fileID: 320913208}
   - component: {fileID: 320913207}
   - component: {fileID: 320913206}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Plane (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -632,7 +632,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 823
+    m_Bits: 2871
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -980,6 +980,22 @@ Prefab:
       propertyPath: m_Name
       value: Player1
       objectReference: {fileID: 0}
+    - target: {fileID: 1388296691031784, guid: 3eb995df1f4f7d84cb7c16686c7c382d, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1788630508143070, guid: 3eb995df1f4f7d84cb7c16686c7c382d, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1063085251814056, guid: 3eb995df1f4f7d84cb7c16686c7c382d, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1245301727292700, guid: 3eb995df1f4f7d84cb7c16686c7c382d, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3eb995df1f4f7d84cb7c16686c7c382d, type: 2}
   m_IsPrefabAsset: 0
@@ -1032,6 +1048,18 @@ Prefab:
       propertyPath: GameManager
       value: 
       objectReference: {fileID: 1303167650}
+    - target: {fileID: 1148139299171378, guid: 5a75298c230580b40bf2f0be34d1c704, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1566638644380700, guid: 5a75298c230580b40bf2f0be34d1c704, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1097699011356958, guid: 5a75298c230580b40bf2f0be34d1c704, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a75298c230580b40bf2f0be34d1c704, type: 2}
   m_IsPrefabAsset: 0
@@ -1163,7 +1191,7 @@ Canvas:
   m_RenderMode: 1
   m_Camera: {fileID: 338496401}
   m_PlaneDistance: 8.57
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -1410,7 +1438,7 @@ GameObject:
   - component: {fileID: 1592824827}
   - component: {fileID: 1592824826}
   - component: {fileID: 1592824825}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Plane (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1545,7 +1573,7 @@ GameObject:
   - component: {fileID: 1779729838}
   - component: {fileID: 1779729837}
   - component: {fileID: 1779729836}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Plane (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
