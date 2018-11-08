@@ -333,6 +333,7 @@
     <Compile Include="Assets\Kino\Isoline\Isoline.cs" />
     <Compile Include="Assets\Kino\Isoline\IsolineScroller.cs" />
     <Compile Include="Assets\Kino\Tube\Tube.cs" />
+    <Compile Include="Assets\MenuManager.cs" />
     <Compile Include="Assets\Oscillate.cs" />
     <Compile Include="Assets\Reaktion\Internal\Perlin.cs" />
     <Compile Include="Assets\Reaktion\Utility\JitterMotion.cs" />

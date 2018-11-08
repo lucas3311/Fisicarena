@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
     public int Score1 = 0;
@@ -61,5 +62,8 @@ public class GameManager : MonoBehaviour {
         Time.timeScale = 0.0f;
         WinningScreen.SetActive(true);
         WinningText.text = texto;
+    }
+    public void GoToMenu() {
+        SceneManager.LoadScene(0);
     }
 }
