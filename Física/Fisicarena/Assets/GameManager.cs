@@ -51,6 +51,11 @@ public class GameManager : MonoBehaviour {
         {
             Win("Player2 Wins!");
         }
+        if (phase == 3)
+        {
+            phase = 0;
+        }
+        Debug.Log(phase);
     }
     void Win(string texto) {
         Time.timeScale = 0.0f;

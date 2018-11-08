@@ -306,10 +306,6 @@
       <Project>{6877705C-FBD9-0C4F-5AFB-6FB431E5D39D}</Project>
       <Name>Unity.PackageManagerUI.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{07A21C90-D344-AE1A-8456-9910C203B41A}</Project>
-      <Name>Unity.TextMeshPro</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.Postprocessing.Editor.csproj">
       <Project>{CBEC4DCB-1B2B-E03B-0387-393C59967E8B}</Project>
       <Name>Unity.Postprocessing.Editor</Name>
@@ -317,6 +313,10 @@
     <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
       <Project>{49FCAFB7-7D0A-B3F6-2171-B4248A94EC21}</Project>
       <Name>Unity.Postprocessing.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.TextMeshPro.csproj">
+      <Project>{07A21C90-D344-AE1A-8456-9910C203B41A}</Project>
+      <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -333,6 +333,7 @@
     <Compile Include="Assets\Kino\Isoline\Isoline.cs" />
     <Compile Include="Assets\Kino\Isoline\IsolineScroller.cs" />
     <Compile Include="Assets\Kino\Tube\Tube.cs" />
+    <Compile Include="Assets\Oscillate.cs" />
     <Compile Include="Assets\Reaktion\Internal\Perlin.cs" />
     <Compile Include="Assets\Reaktion\Utility\JitterMotion.cs" />
     <Compile Include="Assets\Shaders\ImageEffects\Bloom_V2\PostEffectsBase.cs" />
