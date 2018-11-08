@@ -14,6 +14,7 @@ public class Shoot1 : MonoBehaviour
 
     public GameObject GameManager;
 
+    public GameObject Player;
     // Use this for initialization
     void Start()
     {
@@ -52,10 +53,12 @@ public class Shoot1 : MonoBehaviour
     {
         if (collision.gameObject.layer == 9)
         {
+
+            GameManager.GetComponent<GameManager>().Score1 += 1;
+            GameManager.GetComponent<GameManager>().phase += 1;
+            Instantiate(Player, new Vector3(7.64f, 0, -0.02f), Quaternion.Euler(new Vector3(0, 0, 90)));
             Destroy(gameObject);
-            GameManager.GetComponent<GameManager>().Score1 = +1;
-            GameManager.GetComponent<GameManager>().phase = +1;
-            StartCoroutine(GameManager.GetComponent<GameManager>().WaitToSpawn(3));
+
         }
     }
 }

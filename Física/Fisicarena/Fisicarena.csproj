@@ -321,6 +321,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AsciiArtFx\AsciiArtFx.cs" />
+    <Compile Include="Assets\Boot.cs" />
+    <Compile Include="Assets\Boot1.cs" />
     <Compile Include="Assets\Bullet.cs" />
     <Compile Include="Assets\ColorSuite\ColorSuite.cs" />
     <Compile Include="Assets\GameManager.cs" />

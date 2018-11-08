@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour {
     public int Score1 = 0;
     public int Score2 = 0;
+    public int PlacarMaximo = 10;
     public Text Placar1;
     public Text Placar2;
 
@@ -15,8 +16,8 @@ public class GameManager : MonoBehaviour {
     public GameObject Level2;
     public GameObject Level3;
 
-    public GameObject Player1;
-    public GameObject Player2;
+    public GameObject WinningScreen;
+    public Text WinningText;
     // Use this for initialization
     void Start () {
 		
@@ -43,12 +44,17 @@ public class GameManager : MonoBehaviour {
             Level2.SetActive(false);
             Level3.SetActive(true);
         }
+        if (Score1 == PlacarMaximo) {
+            Win("Player1 Wins!");
+        }
+        if (Score2 == PlacarMaximo)
+        {
+            Win("Player2 Wins!");
+        }
     }
-    public IEnumerator WaitToSpawn(float waitTime)
-    {
-        Debug.Log("Begin");
-        yield return new WaitForSeconds(waitTime);
-        Instantiate(Player1, new Vector3(-7.64f, 0, -0.01953382f), Quaternion.identity);
-        Instantiate(Player2, new Vector3(7.64f, 0, -0.02f), Quaternion.identity);
+    void Win(string texto) {
+        Time.timeScale = 0.0f;
+        WinningScreen.SetActive(true);
+        WinningText.text = texto;
     }
 }
