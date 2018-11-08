@@ -54,6 +54,8 @@ public class Shoot1 : MonoBehaviour
         {
             Destroy(gameObject);
             GameManager.GetComponent<GameManager>().Score1 = +1;
+            GameManager.GetComponent<GameManager>().phase = +1;
+            StartCoroutine(GameManager.GetComponent<GameManager>().WaitToSpawn(3));
         }
     }
 }
