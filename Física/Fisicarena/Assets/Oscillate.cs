@@ -7,7 +7,7 @@ public class Oscillate : MonoBehaviour {
     public float maxValue = 15; // or whatever you want the max value to be
     public float minValue = -15; // or whatever you want the min value to be
     float currentValue = 0; // or wherever you want to start
-    float direction = 1;
+    float direction = 2;
 
 
     void Update()

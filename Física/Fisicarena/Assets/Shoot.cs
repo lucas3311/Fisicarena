@@ -15,10 +15,21 @@ public class Shoot : MonoBehaviour
     public GameObject GameManager;
 
     public GameObject Player;
+    bool CanDie = false;
+
+    public float tempoInvencivel = 4;
+
+    public float Cooldown = 0.3f;
+    float Cool;
+
+    public GameObject Particle;
     // Use this for initialization
     void Start()
     {
+        Color tmp = gameObject.GetComponent<SpriteRenderer>().color;
 
+        Player.GetComponent<SpriteRenderer>().color = tmp;
+        StartCoroutine(Blinker());
     }
 
     // Update is called once per frame
@@ -42,16 +53,19 @@ public class Shoot : MonoBehaviour
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(-transform.up * Velocidade * Time.deltaTime);
         }
-        if (Input.GetButtonDown("Space")) {
+        if (Input.GetButtonDown("Space") && Time.time >= Cool) {
             Rigidbody2D bulletInstance;
             bulletInstance = Instantiate(Bullet, Emitter.position,Emitter.rotation) as Rigidbody2D;
             bulletInstance.AddForce(Emitter.up * velBullet);
+            Cool = Time.time + Cooldown;
+            Particle.GetComponent<ParticleSystem>().Play();
+
         }
-        
+
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == 9)
+        if (collision.gameObject.layer == 9 && CanDie == true)
         {
             GameManager.GetComponent<GameManager>().Score2 += 1;
             GameManager.GetComponent<GameManager>().phase += 1;
@@ -59,5 +73,60 @@ public class Shoot : MonoBehaviour
             Destroy(gameObject);
 
         }
+    }
+    IEnumerator Blinker()
+    {
+        Color tmp = Player.GetComponent<SpriteRenderer>().color;
+        Player.GetComponent<SpriteRenderer>().color = tmp;
+
+        yield return new WaitForSeconds(tempoInvencivel / 10);
+        Player.GetComponent<SpriteRenderer>().color = tmp;
+        tmp.a = 255;
+
+        yield return new WaitForSeconds(tempoInvencivel / 10);
+        Player.GetComponent<SpriteRenderer>().color = tmp;
+        tmp.a = 0;
+
+        yield return new WaitForSeconds(tempoInvencivel / 10);
+        Player.GetComponent<SpriteRenderer>().color = tmp;
+        tmp.a = 255f;
+
+        yield return new WaitForSeconds(tempoInvencivel / 10);
+        Player.GetComponent<SpriteRenderer>().color = tmp;
+        tmp.a = 0;
+
+        yield return new WaitForSeconds(tempoInvencivel / 10);
+        Player.GetComponent<SpriteRenderer>().color = tmp;
+
+        tmp.a = 255f;
+
+        yield return new WaitForSeconds(tempoInvencivel / 10);
+        Player.GetComponent<SpriteRenderer>().color = tmp;
+
+        tmp.a = 0;
+
+        yield return new WaitForSeconds(tempoInvencivel / 10);
+        Player.GetComponent<SpriteRenderer>().color = tmp;
+
+        tmp.a = 255f;
+
+        yield return new WaitForSeconds(tempoInvencivel / 10);
+        Player.GetComponent<SpriteRenderer>().color = tmp;
+
+        tmp.a = 0;
+
+        yield return new WaitForSeconds(tempoInvencivel / 10);
+        Player.GetComponent<SpriteRenderer>().color = tmp;
+
+        tmp.a = 255f;
+
+        yield return new WaitForSeconds(tempoInvencivel / 10);
+        Player.GetComponent<SpriteRenderer>().color = tmp;
+
+        tmp.a = 0;
+
+        CanDie = true;
+
+        StopCoroutine("Blinker");
     }
 }

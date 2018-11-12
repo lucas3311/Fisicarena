@@ -321,10 +321,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\AsciiArtFx\AsciiArtFx.cs" />
+    <Compile Include="Assets\AutoDestroy.cs" />
     <Compile Include="Assets\Boot.cs" />
     <Compile Include="Assets\Boot1.cs" />
     <Compile Include="Assets\Bullet.cs" />
     <Compile Include="Assets\ColorSuite\ColorSuite.cs" />
+    <Compile Include="Assets\Contagem.cs" />
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\Kino Imported\Bokeh\Bokeh.cs" />
     <Compile Include="Assets\Kino Imported\Fringe\Fringe.cs" />

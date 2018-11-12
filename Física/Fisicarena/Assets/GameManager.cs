@@ -19,6 +19,8 @@ public class GameManager : MonoBehaviour {
 
     public GameObject WinningScreen;
     public Text WinningText;
+
+
     // Use this for initialization
     void Start () {
 		
@@ -46,11 +48,11 @@ public class GameManager : MonoBehaviour {
             Level3.SetActive(true);
         }
         if (Score1 == PlacarMaximo) {
-            Win("Player1 Wins!");
+            Win("Player 1 Wins!");
         }
         if (Score2 == PlacarMaximo)
         {
-            Win("Player2 Wins!");
+            Win("Player 2 Wins!");
         }
         if (phase == 3)
         {
