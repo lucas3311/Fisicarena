@@ -23,6 +23,8 @@ public class Shoot : MonoBehaviour
     float Cool;
 
     public GameObject Particle;
+    public AudioSource audio;
+    public AudioSource die;
     // Use this for initialization
     void Start()
     {
@@ -60,6 +62,7 @@ public class Shoot : MonoBehaviour
             Cool = Time.time + Cooldown;
             Particle.GetComponent<ParticleSystem>().Play();
 
+            audio.Play();
         }
 
     }
@@ -70,6 +73,7 @@ public class Shoot : MonoBehaviour
             GameManager.GetComponent<GameManager>().Score2 += 1;
             GameManager.GetComponent<GameManager>().phase += 1;
             Instantiate(Player, new Vector3(-7.64f, 0, -0.01953382f),Quaternion.Euler(new Vector3(0, 0, -90)));
+            die.Play();
             Destroy(gameObject);
 
         }

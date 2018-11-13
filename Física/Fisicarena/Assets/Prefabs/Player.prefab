@@ -192,7 +192,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1388296691031784}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 82773a23cfc86a7479e6d77861c2fff7, type: 3}
   m_Name: 
@@ -211,7 +211,7 @@ MonoBehaviour:
   Emitter: {fileID: 4400895979741162}
   Velocidade: 40000
   Bullet: {fileID: 50907824828330354, guid: febd275f112756c4c9e6875a157bd3e8, type: 2}
-  velBullet: 275
+  velBullet: 500
   camera: {fileID: 0}
   speed: 12
   GameManager: {fileID: 0}
@@ -219,6 +219,8 @@ MonoBehaviour:
   tempoInvencivel: 2
   Cooldown: 0.45
   Particle: {fileID: 1846989246243704}
+  audio: {fileID: 0}
+  die: {fileID: 0}
 --- !u!198 &198307977512460138
 ParticleSystem:
   m_ObjectHideFlags: 1

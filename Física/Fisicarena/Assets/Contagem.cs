@@ -12,6 +12,16 @@ public class Contagem : MonoBehaviour {
     public GameObject Player2;
 
     public Animator FadeOut;
+
+    public AudioSource audio;
+    public AudioSource audio2;
+
+
+    bool cont3 = true;
+    bool cont2 = true;
+    bool cont1 = true;
+    bool cont0 = true;
+
     // Use this for initialization
     void Start () {
         Player1.GetComponent<Boot>().enabled = false;
@@ -24,6 +34,31 @@ public class Contagem : MonoBehaviour {
         FadeOut.Play("Fade out");
         timeLeft -= Time.deltaTime;
         contagem.text = Mathf.Round(timeLeft).ToString();
+
+        if (Mathf.Round(timeLeft) == 3 && cont3) {
+            audio.PlayOneShot(audio.clip, 1);
+            cont3 = false;
+        }
+        if (Mathf.Round(timeLeft) == 2 && cont2)
+        {
+            audio.PlayOneShot(audio.clip, 1);
+            cont2 = false;
+
+        }
+        if (Mathf.Round(timeLeft) == 1 && cont1)
+            {
+                audio.PlayOneShot(audio.clip, 1);
+            cont1 = false;
+
+        }
+        if (Mathf.Round(timeLeft) == 0 && cont0)
+        {
+            audio.PlayOneShot(audio2.clip, 1);
+            cont0 = false;
+
+        }
+
+
         if (timeLeft <= 0) {
             Panel.SetActive(false);
             Player1.GetComponent<Boot>().enabled = true;
