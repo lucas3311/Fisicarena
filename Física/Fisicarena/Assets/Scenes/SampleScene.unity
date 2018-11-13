@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -405,7 +405,7 @@ Prefab:
     - target: {fileID: 250755059776503460, guid: 3851ffc2844d7bb4d93ed35460946ac7,
         type: 2}
       propertyPath: m_ForceMagnitude
-      value: -25
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 58369603643907084, guid: 3851ffc2844d7bb4d93ed35460946ac7,
         type: 2}
@@ -804,7 +804,7 @@ Prefab:
     - target: {fileID: 250755059776503460, guid: 3851ffc2844d7bb4d93ed35460946ac7,
         type: 2}
       propertyPath: m_ForceMagnitude
-      value: -25
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 58369603643907084, guid: 3851ffc2844d7bb4d93ed35460946ac7,
         type: 2}
@@ -1699,6 +1699,21 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114869692197204824, guid: 3eb995df1f4f7d84cb7c16686c7c382d,
+        type: 2}
+      propertyPath: velBullet
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 114869692197204824, guid: 3eb995df1f4f7d84cb7c16686c7c382d,
+        type: 2}
+      propertyPath: speed
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 114869692197204824, guid: 3eb995df1f4f7d84cb7c16686c7c382d,
+        type: 2}
+      propertyPath: Velocidade
+      value: 40000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3eb995df1f4f7d84cb7c16686c7c382d, type: 2}
   m_IsPrefabAsset: 0
@@ -1917,7 +1932,7 @@ Prefab:
     - target: {fileID: 250755059776503460, guid: 3851ffc2844d7bb4d93ed35460946ac7,
         type: 2}
       propertyPath: m_ForceMagnitude
-      value: -25
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 250755059776503460, guid: 3851ffc2844d7bb4d93ed35460946ac7,
         type: 2}
@@ -1943,6 +1958,11 @@ Prefab:
         type: 2}
       propertyPath: m_Color.b
       value: 0.5686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 250755059776503460, guid: 3851ffc2844d7bb4d93ed35460946ac7,
+        type: 2}
+      propertyPath: m_DistanceScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3851ffc2844d7bb4d93ed35460946ac7, type: 2}
@@ -2058,7 +2078,7 @@ Prefab:
     - target: {fileID: 250755059776503460, guid: 3851ffc2844d7bb4d93ed35460946ac7,
         type: 2}
       propertyPath: m_ForceMagnitude
-      value: -25
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 250755059776503460, guid: 3851ffc2844d7bb4d93ed35460946ac7,
         type: 2}
@@ -2488,6 +2508,11 @@ Prefab:
         type: 2}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114604840013107292, guid: 5a75298c230580b40bf2f0be34d1c704,
+        type: 2}
+      propertyPath: velBullet
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a75298c230580b40bf2f0be34d1c704, type: 2}
